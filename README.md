@@ -6,8 +6,8 @@ Welcome to the **Machine_Learning_Model_Projects** repository! This repository i
 ## Projects Included
 
 ### Regression Models
-1. **Linear Regression Model Project in Python for Beginners**
-2. **Learn to Build a Polynomial Regression Model from Scratch**
+1. **Linear Regression Model Project**
+<!--2. **Learn to Build a Polynomial Regression Model from Scratch**
 3. **Build Piecewise and Spline Regression Models in Python**
 4. **Hands-On Approach to Causal Inference in Machine Learning**
 5. **Hands-On Approach to Regression Discontinuity Design Python**
@@ -116,5 +116,6 @@ Welcome to the **Machine_Learning_Model_Projects** repository! This repository i
 7. **MLOps using Azure DevOps to Deploy a Classification Model**
 8. **MLOps Project to Deploy Resume Parser Model on Paperspace**
 9. **Build CI/CD Pipeline for Machine Learning Projects using Jenkins**
-10. **End-to-End ML Model Monitoring using Airflow and Docker**
+10. **End-to-End ML Model Monitoring using Airflow and Docker**-->
+
 
