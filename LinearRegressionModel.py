@@ -6,6 +6,7 @@ from sklearn.metrics import mean_squared_error
 
 X = np.array([1, 2, 3, 4, 5,6,7,8]).reshape(-1, 1)
 y = np.array([3, 4, 5, 4, 5,4,6,7])
+
 data = {'X_feature': X.flatten(), 'y_target': y} 
 df=pd.DataFrame(data)
 print(df.shape)
