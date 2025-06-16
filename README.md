@@ -1,13 +1,13 @@
 
-# Machine_Learning_Model_Projects
+# Machine Learning Models Projects
 
 Welcome to the **Machine_Learning_Model_Projects** repository! This repository is a comprehensive collection of machine learning projects, ranging from beginner-level models to advanced techniques, covering a wide array of topics and applications. Each project includes detailed instructions and code to help you learn and implement various machine learning models effectively. Whether you are a beginner looking to start your journey or an experienced practitioner aiming to expand your knowledge, this repository has something for everyone.
 
 ## Projects Included
 
 ### Regression Models
-1. **Linear Regression Model Project**
-2.**Linear Regression Model Project**
+1. **Linear Regression Model Project** </br>
+2. **Linear Regression Model Project** </br>
 <!--2. **Learn to Build a Polynomial Regression Model from Scratch**
 3. **Build Piecewise and Spline Regression Models in Python**
 4. **Hands-On Approach to Causal Inference in Machine Learning**
