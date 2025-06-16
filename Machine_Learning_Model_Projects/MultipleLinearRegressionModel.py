@@ -3,9 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import root_mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.stats.anova import anova_lm
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 # Generate synthetic dataset with multicollinearity
 np.random.seed(0)
@@ -46,14 +48,11 @@ print(f"Adjusted R-squared: {1 - (1 - r2_score(y_test, y_pred)) * (len(y_test) -
 print(f"RMSE: {root_mean_squared_error(y_test, y_pred):.3f}")
 
 # Statsmodels for Full Summary and ANOVA
-X_const = sm.add_constant(X)
-ols_model = sm.OLS(y, X_const).fit()
-print(ols_model.summary())
-
-# ANOVA Table
-anova_results = sm.stats.anova_lm(ols_model, typ=2)
-print("\nANOVA Table:")
+data = pd.concat([X, y], axis=1)
+ols_model = smf.ols('Y ~ X1 + X2 + X3', data=data).fit()
+anova_results = anova_lm(ols_model, typ=2)
 print(anova_results)
+
 
 # Model Diagnostics - Residual Plot
 residuals = ols_model.resid
@@ -64,7 +63,6 @@ plt.title("Residual Plot")
 plt.show()
 
 # Check Multicollinearity (VIF)
-from statsmodels.stats.outliers_influence import variance_inflation_factor
 vif_data = pd.DataFrame()
 vif_data['feature'] = X.columns
 vif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
