@@ -6,9 +6,9 @@ Welcome to the **Machine_Learning_Model_Projects** repository! This repository i
 ## Projects Included
 
 ### Regression Models
-1. ** Linear Regression Model ** </br>
-2. ** Linear Regression Model ** </br>
-3. ** Polynomial Regression Model ** </br>
+1. **Linear Regression Model** </br>
+2. **Linear Regression Model** </br>
+3. **Polynomial Regression Model** </br>
 <!--
 3. **Build Piecewise and Spline Regression Models in Python**
 4. **Hands-On Approach to Causal Inference in Machine Learning**
